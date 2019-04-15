@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="jpr-style.css" />
+    <title>JPR UI-KIT - kit UI de ouf</title>
+  </head>
+  <body>
+    <div class="jpr-navbar">
+      <!-- <div class="site-img"><img src="index.html" alt="site-img" /></div> -->
+      <div class="site-name"><a href="index.html">JPR UI-KIT</a></div>
+      <div class="space"></div>
+      <div class="jpr-link">
+        <a href="web-components.html">web-components</a>
+      </div>
+      <div class="jpr-link">
+        <a href="https://github.com/jpolair">Github</a>
+      </div>
+    </div>
+    <h1 style="text-align: center;color:#777">JPR UI-KIT</h1>
+
+    <!-- Btn rounded-->
+    <div
+      style="margin-top:60px;display:flex;justify-content: space-around"
+      class="my-buttons"
+    >
+      <div class="one-button">
+        <button class="btn-rounded-light-valid">valid</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-rounded-valid">valid</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-rounded-light-info">Info</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-rounded-info">Info</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-rounded-light-danger">Danger</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-rounded-danger">Danger</button>
+      </div>
+    </div>
+    <!-- Btn classics -->
+    <div
+      style="margin-top:60px;display:flex;justify-content: space-around"
+      class="my-buttons"
+    >
+      <div class="one-button">
+        <button class="btn-light-valid">valid</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-valid">valid</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-light-info">Info</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-info">Info</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-light-danger btn-shadow">Danger</button>
+      </div>
+      <div class="one-button">
+        <button class="btn-danger btn-shadow">Danger</button>
+      </div>
+    </div>
+    <!-- table -->
+    <div style="margin-top:50px;margin-bottom:20px">
+      <table class="jpr-table">
+        <caption>
+          Le titre
+        </caption>
+        <thead>
+          <tr>
+            <td>head</td>
+            <td>head</td>
+            <td>head</td>
+            <td>head</td>
+            <td>head</td>
+            <td>head</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+          </tr>
+          <tr>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+          </tr>
+          <tr>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+            <td>case</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>foot</td>
+            <td>foot</td>
+            <td>foot</td>
+            <td>foot</td>
+            <td>foot</td>
+            <td>foot</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <!-- list -->
+    <div style="margin:40px auto;width:90%">
+      <div class="jpr-list">
+        <div class="jpr-list-title">Insectes</div>
+        <ul class="jpr-list">
+          <li>Abeilles</li>
+          <li>Poissons</li>
+          <li>Papillons</li>
+          <li>Coccinelles</li>
+          <li>Mouches</li>
+        </ul>
+      </div>
+    </div>
+    <!-- formulaires -->
+    <div style="margin:40px">
+      <form class="jpr-form-inline">
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Prénom</label>
+          <input class="jpr-form-input-text" type="text" />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Nom</label>
+          <input class="jpr-form-input-text" type="text" />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Ville</label>
+          <select class="jpr-form-select">
+            <option value="">Fais ton choix</option>
+            <option value="Paris">Paris</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Marseille">Marseille</option>
+          </select>
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Banane</label>
+          <input
+            class="jpr-form-input-radio"
+            name="fruit"
+            value="banane"
+            type="radio"
+          />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Pomme</label>
+          <input
+            class="jpr-form-input-radio"
+            name="fruit"
+            value="pomme"
+            type="radio"
+          />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Orange</label>
+          <input
+            class="jpr-form-input-radio"
+            name="fruit"
+            value="orange"
+            type="radio"
+          />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Banane</label>
+          <input
+            class="jpr-form-input-checkbox"
+            name="fruit"
+            value="banane"
+            type="checkbox"
+          />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Pomme</label>
+          <input
+            class="jpr-form-input-checkbox"
+            name="fruit"
+            value="pomme"
+            type="checkbox"
+          />
+        </div>
+        <div class="jpr-line">
+          <label class="jpr-form-label" for="">Orange</label>
+          <input
+            class="jpr-form-input-checkbox"
+            name="fruit"
+            value="orange"
+            type="checkbox"
+          />
+        </div>
+      </form>
+    </div>
+    <!-- aside cards -->
+    <div class="jpr-line">
+      <div class="jpr-aside-card-info">
+        <p>
+          Ceci est une petite carte avec des informations, c'est une aside card
+          info
+        </p>
+      </div>
+      <div class="jpr-aside-card-valid">
+        <p>
+          Ceci est une petite carte avec des informations, c'est une aside card
+          valid
+        </p>
+      </div>
+      <div class="jpr-aside-card-danger">
+        <p>
+          Ceci est une petite carte avec des informations, c'est une aside card
+          danger
+        </p>
+      </div>
+      <div class="jpr-aside-card-main">
+        <p>
+          Ceci est une petite carte avec des informations, c'est une aside card
+          main
+        </p>
+      </div>
+      <div class="jpr-aside-card-reverse">
+        <p>
+          Ceci est une petite carte avec des informations, c'est une aside card
+          reverse
+        </p>
+      </div>
+    </div>
+    <!-- footer bar -->
+    <div class="jpr-footer">
+      <div class="footer-block">
+          <p>Jean-Paul Réman</p>
+          <p>Développeur web</p>
+          <p>Bordeaux-France</p>
+      </div>
+      <div class="footer-block">
+          <p>Jean-Paul Réman</p>
+          <p>Développeur web</p>
+          <p>Bordeaux-France</p>
+      </div>
+      <div class="footer-block">
+          <p>Jean-Paul Réman</p>
+          <p>Développeur web</p>
+          <p>Bordeaux-France</p>
+      </div>
+    </div>
+
+    <!-- <script src="web-components/jpr-card.js"></script> -->
+  </body>
+</html>

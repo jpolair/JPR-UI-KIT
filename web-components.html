@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jpr-style.css">
+    <title>web-components</title>
+</head>
+<body>
+        <div class="jpr-navbar">
+                <!-- <div class="site-img"><img src="index.html" alt="site-img" /></div> -->
+                <div class="site-name"><a href="index.html">JPR UI-KIT</a></div>
+                <div class="space"></div>
+                <div class="jpr-link"><a href="web-components.html">web-components</a></div>
+                <div class="jpr-link"><a href="#">Github</a></div>
+              </div>
+        <div style="display: flex; justify-content: space-around">
+                <jpr-card
+                  header-background="#FF6677"
+                  header-color="#eee"
+                  card-title="Alert"
+                  card-content-title="Le titre"
+                  card-content="Ici le texte associé à la carte, on y met ce qu'on veut vraiment ce qu'on veut sans aucun soucis"
+                >
+                </jpr-card>
+              </div>
+    <script src="web-components/jpr-card.js"> </script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+/* variables */
+button,
+input,
+select {
+    --valid: #22DD66;
+    --info: #2288FF;
+    --danger: #FF2222;
+}
+div, 
+caption {
+    --main-background: #FF6677;
+    --info-background: #2288FF;
+    --valid-background: #22DD66;
+    --danger-background: #FF2222;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+}
+/* navbar */
+div.jpr-navbar {
+    height: 70px;
+    width: 100%;
+    background: var(--main-background);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+div.jpr-navbar div {
+    margin: auto 15px;
+}
+div.jpr-navbar a {
+    text-decoration: none;
+    color: white;
+}
+div.jpr-navbar a:hover {
+    display: block;
+    transform: scaleY(2);
+    font-weight: bold;
+}
+div.jpr-navbar div.space {
+    flex: 5;
+}
+/* buttons rounded */
+
+button.btn-rounded-light-valid {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid var(--valid);
+    color: var(--valid);
+}
+button.btn-rounded-light-valid:hover {
+    width: 12em;
+    height: 4em;
+    background: var(--valid);
+    border-radius: 30px;
+    border: 1px solid var(--valid);
+    color: white;
+    cursor: pointer;
+}
+button.btn-rounded-valid {
+    width: 12em;
+    height: 4em;
+    background: var(--valid);
+    border-radius: 30px;
+    border: 1px solid var(--valid);
+    color: white;
+}
+button.btn-rounded-valid:hover {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid var(--valid);
+    color: var(--valid);
+    cursor: pointer;
+}
+button.btn-rounded-light-info {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid var(--info);
+    color: var(--info);
+}
+button.btn-rounded-light-info:hover {
+    width: 12em;
+    height: 4em;
+    background: var(--info);
+    border-radius: 30px;
+    border: 1px solid var(--info);
+    color: white;
+    cursor: pointer;
+}
+button.btn-rounded-info {
+    width: 12em;
+    height: 4em;
+    background: var(--info);
+    border-radius: 30px;
+    border: 1px solid var(--info);
+    color: white;
+}
+button.btn-rounded-info:hover {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid var(--info);
+    color: var(--info);
+    cursor: pointer;
+}
+button.btn-rounded-light-danger {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+button.btn-rounded-light-danger:hover {
+    width: 12em;
+    height: 4em;
+    background: var(--danger);
+    border-radius: 30px;
+    border: 1px solid var(--danger);
+    color: white;
+    cursor: pointer;
+}
+button.btn-rounded-danger {
+    width: 12em;
+    height: 4em;
+    background: var(--danger);
+    border-radius: 30px;
+    border: 1px solid var(--danger);
+    color: white;
+}
+button.btn-rounded-danger:hover {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border-radius: 30px;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    cursor: pointer;
+}
+button.btn-rounded-light-valid:active,
+button.btn-rounded-valid:active,
+button.btn-rounded-light-info:active,
+button.btn-rounded-info:active,
+button.btn-rounded-light-danger:active,
+button.btn-rounded-danger:active {
+    transform: translateY(4px);
+}
+/* btn classics */
+button.btn-light-valid {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border: 1px solid var(--valid);
+    color: var(--valid);
+}
+button.btn-light-valid:hover {
+    width: 12em;
+    height: 4em;
+    background: var(--valid);
+    border: 1px solid var(--valid);
+    color: white;
+    cursor: pointer;
+}
+button.btn-valid {
+    width: 12em;
+    height: 4em;
+    background: var(--valid);
+    border: 1px solid var(--valid);
+    color: white;
+}
+button.btn-valid:hover {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border: 1px solid var(--valid);
+    color: var(--valid);
+    cursor: pointer;
+}
+button.btn-light-info {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border: 1px solid var(--info);
+    color: var(--info);
+}
+button.btn-light-info:hover {
+    width: 12em;
+    height: 4em;
+    background: var(--info);
+    border: 1px solid var(--info);
+    color: white;
+    cursor: pointer;
+}
+button.btn-info {
+    width: 12em;
+    height: 4em;
+    background: var(--info);
+    border: 1px solid var(--info);
+    color: white;
+}
+button.btn-info:hover {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border: 1px solid var(--info);
+    color: var(--info);
+    cursor: pointer;
+}
+button.btn-light-danger {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+button.btn-light-danger:hover {
+    width: 12em;
+    height: 4em;
+    background: var(--danger);
+    border: 1px solid var(--danger);
+    color: white;
+    cursor: pointer;
+}
+button.btn-danger {
+    width: 12em;
+    height: 4em;
+    background: var(--danger);
+    border: 1px solid var(--danger);
+    color: white;
+}
+button.btn-danger:hover {
+    width: 12em;
+    height: 4em;
+    background: white;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    cursor: pointer;
+}
+button.btn-light-valid:active,
+button.btn-valid:active,
+button.btn-light-info:active,
+button.btn-info:active,
+button.btn-light-danger:active,
+button.btn-danger:active {
+    transform: translateY(4px);
+}
+.btn-shadow {
+    box-shadow: 5px 5px 5px #ddd;
+}
+/* table */
+table.jpr-table {
+    width: 96%;
+    table-layout: auto;
+    margin: auto;
+    caption-side: top;
+    empty-cells: show;
+    vertical-align: middle;
+    border-collapse: collapse;
+    color: #777;
+}
+table.jpr-table tr:hover {
+    background: #efefef;
+}
+caption {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.6em;
+    background: var(--main-background);
+    color: white;
+}
+table.jpr-table thead tr td,
+table.jpr-table tfoot tr td {
+    font-weight: bold;
+}
+table.jpr-table td {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+/* list */
+div.jpr-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+div.jpr-list .jpr-list-title {
+    background: var(--main-background);
+    padding: 10px;
+    color: white;
+}
+ul.jpr-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.jpr-list li {
+    padding: 10px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    color: #777;
+}
+ul.jpr-list li:hover {
+    background: #efefef; 
+    transform: scaleY(1.5);
+}
+ul.jpr-list li:first-child {
+    padding: 10px;
+    border-top: none;
+    border-bottom: 1px solid #efefef;
+}
+/* formulaires */
+form.jpr-form-inline {
+    width: 100%; 
+}
+div.jpr-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+label.jpr-form-label {
+    display: block;
+    width: 15%;
+    height: 30px;
+    color: #777;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+input.jpr-form-input-text {
+    width: 85%;
+    height: 30px;
+    border: 2px solid #EFEFEF;
+    border-radius: 5px;
+    padding: 2px 0 2px 12px;
+    font-size: 1.2em;
+    color: #777;
+}
+input.jpr-form-input-text:focus {
+    border: 2px solid var(--info);
+}
+select.jpr-form-select {
+    width: 85%;
+    height: 40px;
+    border: 2px solid #EFEFEF;
+    color: #777;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 4px;
+}
+select.jpr-form-select:focus {
+    border: 2px solid var(--info);
+}
+/* aside card */
+
+div.jpr-aside-card-info {
+    width: 200px;
+    color: white;
+    background: var(--info-background);
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+div.jpr-aside-card-valid {
+    width: 200px;
+    color: white;
+    background: var(--valid-background);
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+div.jpr-aside-card-danger {
+    width: 200px;
+    color: white;
+    background: var(--danger-background);
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+div.jpr-aside-card-main {
+    width: 200px;
+    color: white;
+    background: var(--main-background);
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+div.jpr-aside-card-reverse {
+    width: 200px;
+    color: var(--info-background);
+    background: transparent;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+    border: 1px solid var(--info-background);
+}
+/* footer-bar */
+div.jpr-footer {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    position: sticky;
+    bottom: 0px;
+    background: #222;
+}
+.footer-block {
+  margin: auto;
+  width: 33%;
+  text-align: center;
+  color: white;
+}
